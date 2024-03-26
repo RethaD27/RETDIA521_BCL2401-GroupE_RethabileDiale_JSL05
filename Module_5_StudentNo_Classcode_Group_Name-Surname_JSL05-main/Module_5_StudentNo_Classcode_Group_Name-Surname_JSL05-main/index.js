@@ -66,7 +66,7 @@ function displayPlaylists(playlists) {
     const title = document.createElement('h2');
     title.textContent = playlist[0].name + "'s Playlist";
     playlistDiv.appendChild(title)
-    
+
     // Create an unordered list
     const list = document.createElement('ul');
 
