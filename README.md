@@ -10,10 +10,17 @@ Guardians' Playlist Generator is a web application that allows users to generate
 - Allows users to select playlists and add them to their galactic mix.
 
 ## Technnologies
-1. HTML
-2. CSS
-3. JavaScript
+- HTML
+- CSS
+- JavaScript
 
 ## Usage
-- Upon opening the application in your web browser, you'll see the title "Galaxy Mix" and a list of playlists available for selection.
+- Upon opening the application in your web browser, you will see the title "Galaxy Mix" and a list of playlists available for selection.
 - Click on the playlists to add them to your mix.
+
+
+## Reflections
+What Went Well:
+- Functionality: The JavaScript code effectively fetched and displayed playlists dynamically on the webpage, allowing users to select playlists and add them to their mix.
+
+Challenges Faced:
