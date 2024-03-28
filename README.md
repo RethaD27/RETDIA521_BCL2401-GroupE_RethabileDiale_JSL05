@@ -24,7 +24,7 @@ What Went Well:
 * Functionality: The JavaScript code effectively fetched and displayed playlists dynamically on the webpage, allowing users to select playlists and add them to their mix.
 
 Challenges Faced:
-* Generating a random playlist of 3 songs for each Guardian.
+* Creating a loop through each song in the playlist.
 
 Lessons Learned:
 * DOM Manipulation: Learned how to manipulate the Document Object Model (DOM) using JavaScript to dynamically update webpage content.
