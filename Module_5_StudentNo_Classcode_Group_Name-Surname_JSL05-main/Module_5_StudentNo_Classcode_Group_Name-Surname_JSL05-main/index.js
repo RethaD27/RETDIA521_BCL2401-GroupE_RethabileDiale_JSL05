@@ -37,8 +37,8 @@ function generatePlaylist(guardians, songs) {
   
       // Generate a random playlist of 3 songs
       const playlist = songsOfPreferredGenre
-        .sort(() => 0.5 - Math.random())
-        .slice(0, 3);
+        // .sort(() => 0.5 - Math.random())
+        // .slice(0, 3);
   
       // Add the guardian's name as the first element of the playlist
       playlist.unshift({ name });
@@ -56,6 +56,9 @@ function displayPlaylists(playlists) {
   const playlistsDiv = document.createElement('div');
   playlistsDiv.id = 'playlists';
 
+  // Add pointer cursor style
+document.documentElement.style.cursor = 'pointer';
+
   // Loop through each playlist
   playlists.forEach((playlist) => {
     // Create a playlist container div
@@ -68,12 +71,12 @@ function displayPlaylists(playlists) {
     playlistDiv.appendChild(title)
 
     // Create an unordered list
-    const list = document.createElement('ul');
+    const list = document.createElement('div');
 
     // Loop through each song in the playlist
     playlist.slice(1).forEach((song) => {
       // Create a list items
-      const listItem = document.createElement('ul');
+      const listItem = document.createElement('div');
 
       // Set the song title and artist
       const songTitle = document.createElement('span');
