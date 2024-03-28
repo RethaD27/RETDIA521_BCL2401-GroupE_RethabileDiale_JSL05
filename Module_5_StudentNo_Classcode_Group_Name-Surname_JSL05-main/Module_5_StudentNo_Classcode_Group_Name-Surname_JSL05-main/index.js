@@ -35,10 +35,8 @@ function generatePlaylist(guardians, songs) {
       // Filter the songs array based on the specified genre
       const songsOfPreferredGenre = songs.filter(song => song.genre === genre);
   
-      // Generate a random playlist of 3 songs
+      // Generate a random playlist of songs
       const playlist = songsOfPreferredGenre
-        // .sort(() => 0.5 - Math.random())
-        // .slice(0, 3);
   
       // Add the guardian's name as the first element of the playlist
       playlist.unshift({ name });
@@ -77,13 +75,14 @@ document.documentElement.style.cursor = 'pointer';
     playlist.slice(1).forEach((song) => {
       // Create a list items
       const listItem = document.createElement('div');
+      listItem.className = 'song';
 
       // Set the song title and artist
       const songTitle = document.createElement('span');
-      songTitle.textContent = `${song.title} `;
+      songTitle.textContent = `${song.title}`;
       songTitle.className = 'song-title';
       const songArtist = document.createElement('span');
-      songArtist.textContent = `by ${song.artist}`;
+      songArtist.textContent = ` by ${song.artist}`;
 
       // Append the title and artist to the list item
       listItem.appendChild(songTitle);
@@ -103,5 +102,6 @@ document.documentElement.style.cursor = 'pointer';
   // Append the container div to the document
   document.body.appendChild(playlistsDiv);
 }
+
   // Call function to generate and display playlists
   generatePlaylist(guardians, songs);
