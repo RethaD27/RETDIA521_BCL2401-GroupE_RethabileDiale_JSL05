@@ -27,5 +27,5 @@ Challenges Faced:
 * Creating a loop through each song in the playlist.
 
 Lessons Learned:
-* DOM Manipulation: Learned how to manipulate the Document Object Model (DOM) using JavaScript to dynamically update webpage content.
-* Project Organization: Understood the importance of maintaining clean code to improve readability and maintainability. 
+* DOM Manipulation: I learned how to manipulate the Document Object Model (DOM) using JavaScript to dynamically update webpage content.
+* Project Organization: I understood the importance of maintaining clean code to improve readability and maintainability. 
